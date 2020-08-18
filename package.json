@@ -1,0 +1,16 @@
+{
+  "name": "thameofthrones",
+  "version": "1.0.0",
+  "description": "A file storing the packages of the thames of thrones program",
+  "main": "greektrust.js",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node greektrust.js"
+  },
+  "author": "Ashwin Dinesh Nair",
+  "license": "ISC"
+}
