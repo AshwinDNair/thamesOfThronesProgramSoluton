@@ -43,16 +43,9 @@ function msgDecryption(kingdom, encryptedStr) { //function to decrypt message
         "ice": "mammoth",
         "fire": "dragon"
     };
-    Object.keys(kingdomEmblemObj).forEach((key, index) => {
-        if (kingdom.toLowerCase() == key) //find instance with selected kingdom as key in the object
-        {
-            len = kingdomEmblemObj[key].length;
-            pos = key;
-        }
-    });
-    str = caesarDecryption(encryptedStr, len);
-    if (strCompare(str.toLowerCase().trim(), kingdomEmblemObj[pos])) { //get output string with ruler and all allies
-        finalOutput = finalOutput + pos.toUpperCase() + " "
+    str = caesarDecryption(encryptedStr, kingdomEmblemObj[kingdom.toLowerCase()].length);
+    if (strCompare(str.toLowerCase().trim(), kingdomEmblemObj[kingdom.toLowerCase()])) { //get output string with ruler and all allies
+        finalOutput = finalOutput + kingdom.toUpperCase() + " "
     }
 }
 
@@ -89,10 +82,10 @@ thameOfThrones().then(data => {
             console.log(finalOutput);
         } catch (e) {
             console.log("Invalid Input Data");
+            console.log(e);
         }
     })
     .catch(err => {
         console.log("Invalid File Path");
         console.log(err)
     })
-thameOfThrones();

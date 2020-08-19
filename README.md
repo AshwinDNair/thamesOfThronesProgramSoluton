@@ -6,14 +6,11 @@ Getting Started
 ----------------
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 I have added a sampleInput folder constituting of some test files that can be used as source files to test the program.(optional).
-==========================================================================================================
-
 Prerequisites
 --------------
 Node v10.16.3
 npm  v6.9.0
 
-==========================================================================================================
 Installation and Execution
 ---------------------------
 npm install 
@@ -59,7 +56,6 @@ OUTPUT:
 Invalid File Path
 'Error Message'
 
-==========================================================================================================
 Author
 -------
 Ashwin Dinesh Nair
